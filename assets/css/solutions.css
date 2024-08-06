@@ -1,0 +1,365 @@
+.solutions-container {
+  width: 100%;
+  min-height: 120vh;
+  display: grid;
+  place-items: center;
+  padding-top: 60px;
+}
+
+.solutions-container .row {
+  width: 80%;
+  max-width: 1170px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  overflow-x: hidden;
+  padding: 5rem 0;
+}
+
+.solutions-container .row .imgWrapper {
+  overflow: hidden;
+}
+
+.solutions-container .row .imgWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.solutions-container .row .imgWrapper:hover img {
+  transform: scale(1.25);
+}
+
+.solutions-container .row .contentWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.solutions-container .row .contentWrapper span.textWrapper {
+  display: block;
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.solutions-container .row .contentWrapper span.textWrapper span {
+  display: inline-block;
+  background: #383f47;
+
+  height: 5px;
+}
+
+.solutions-container .row .contentWrapper h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #383f47;
+  padding-bottom: 20px;
+}
+
+.solutions-container .row .contentWrapper p {
+  font-size: 16px;
+  line-height: 25px;
+  padding-bottom: 25px;
+}
+
+.solutions-container .row .contentWrapper a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #383f47;
+  color: #fff;
+  padding: 15px 40px;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.solutions-img-1 {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+  width: 100%;
+}
+
+.content-2 {
+  padding: 20px;
+  display: grid;
+}
+
+.content-2 .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-2 .left-side {
+  text-align: left;
+  padding-right: 20px;
+}
+
+.content-2 h5 {
+  color: #333;
+  width: 100%;
+  justify-content: left;
+}
+
+.content-2 span {
+  font-size: 40px;
+  color: #333;
+  width: 100%;
+  justify-content: left;
+  line-height: 1.25;
+}
+
+.content-2 p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+}
+
+.content-2 .right-side {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.content-2 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.content-2 .blue-text {
+  color: cyan;
+}
+
+.content-2 .purple-text {
+  color: mediumpurple;
+}
+
+.content-3 {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-3 .solution {
+  width: 27%; /* Adjust based on actual size */
+  background-color: #fff; /* Default background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px;
+  /* text-align: center; */
+  border-radius: 10px; /* Rounded corners */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  overflow: hidden; /* Keeps everything contained */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.content-3 .solution:hover {
+  background-color: #e0f7fa; /* Light blue background on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+}
+
+.content-3 .icon img {
+  width: 100px; /* Adjust based on actual size */
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.content-3 h3 {
+  color: #333; /* Customize your color */
+}
+
+.content-3 p {
+  color: #666; /* Customize your color */
+  font-size: 16px; /* Customize your font size */
+  font-weight: 500;
+}
+
+.content-3 .solution a {
+  display: none;
+  padding: 10px;
+}
+
+.content-3 .solution:hover a {
+  display: block;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.learn-more {
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+}
+
+.solution:hover .learn-more {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear 0s;
+}
+
+.industries-container {
+  padding: 20px;
+  font-family: Arial, sans-serif; /* Chọn font phù hợp */
+  width: 80%;
+}
+
+.industry {
+  position: relative;
+  background-color: #045074;
+  color: white;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding-bottom: 50px;
+}
+.industries-container h2 {
+  font-size: 40px;
+}
+
+.industries-container h5 {
+  font-weight: 700;
+  margin-bottom: 16px;
+  font-size: 16px;
+
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.industry h3 {
+  margin-top: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.industry p {
+  font-size: 20px;
+  font-weight: 400;
+}
+.industry h3,
+.industry p {
+  margin: 0 0 10px 0; /* Khoảng cách giữa các phần tử */
+}
+
+.industry a {
+  position: absolute; /* Vị trí tuyệt đối so với container */
+  bottom: 10px; /* Khoảng cách từ cạnh dưới của container */
+  left: 10px; /* Khoảng cách từ cạnh trái của container */
+  color: rgb(180, 180, 180); /* Màu liên kết */
+  text-decoration: none; /* Bỏ gạch chân */
+}
+
+.industry:hover {
+  background-color: #025c68; /* Light blue background on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+  transform: scale(1.05); /* Slightly larger on hover */
+  transition: all 1s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+@media (min-width: 992px) {
+  .industries {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+/* Dành cho màn hình vừa */
+@media (min-width: 768px) and (max-width: 991px) {
+  .industries {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .solutions-container .row {
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
+
+  .solutions-container .row .contentWrapper {
+    padding-left: 0;
+  }
+
+  .solutions-container .content-2 .container {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .content-3 {
+    display: block;
+  }
+
+  .content-3 .solution {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .solutions-container .row {
+    width: 90%;
+  }
+
+  .solutions-container .row .contentWrapper h2 {
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+
+  .solutions-container .row .contentWrapper p {
+    line-height: 24px;
+  }
+
+  .industries {
+    display: flex;
+    flex-direction: column;
+  }
+  .industry {
+    /* Cho mỗi thẻ industry trở thành dạng dropdown hoặc accordion nếu muốn */
+    background-color: #000; /* Ví dụ thay đổi màu nền */
+  }
+}
+
+@media (max-width: 575px) {
+  .solutions-container .row .contentWrapper span.textWrapper {
+    font-size: 18px;
+  }
+
+  .solutions-container .row .contentWrapper h2 {
+    font-size: 25px;
+  }
+
+  .solutions-container .row .contentWrapper p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .solutions-container .row .contentWrapper a {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}

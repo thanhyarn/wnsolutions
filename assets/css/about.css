@@ -1,0 +1,218 @@
+.about-container .hero {
+  min-height: 70vh;
+  background-image: url(../images/about_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-container .content {
+  display: block;
+  text-align: center;
+  color: #fff;
+}
+
+.about-container .content h1 {
+  font-size: 65px;
+  margin-bottom: 20px;
+}
+
+.about-container .content p {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.about-container .content .btn {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #077cfa;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-inline: auto;
+}
+
+/* review */
+
+.review .row {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  padding: 20px 100px;
+  justify-content: center;
+}
+
+.review .row .content {
+  width: 40%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for the content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.review .row .content h2 {
+  color: #333; /* Dark gray color for headers */
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.review .row .content p {
+  color: #666; /* Lighter gray for paragraph */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.review .accordion-container {
+  padding: 0 2rem;
+  flex: 1 1 40rem;
+}
+
+.review .accordion-container .accordion {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.review .accordion-container .accordion.active .accordion-heading {
+  background: #00ac96;
+}
+
+.review .accordion-container .accordion.active .accordion-heading h3 {
+  color: #fff;
+}
+
+.review .accordion-container .accordion.active .accordion-heading i {
+  color: #fff;
+  transform: rotate(180deg);
+  transition: transform 0.2s 0.1s;
+}
+
+.review .accordion-container .accordion.active .accordion-content {
+  display: block;
+  overflow: hidden;
+  transition: height 0.3s ease-out;
+}
+
+.review .accordion-container .accordion .accordion-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: #fff;
+  /* border: 0.1rem solid #248277; */
+  padding: 1.5rem 2rem;
+}
+
+.review .accordion-container .accordion .accordion-heading h3 {
+  font-size: 3.8rem;
+  color: #00ac96;
+}
+
+.review .accordion-container .accordion .accordion-heading p {
+  font-size: 1.8rem;
+}
+
+.review .accordion-container .accordion .accordion-heading i {
+  font-size: 2.5rem;
+}
+
+.review .accordion-container .accordion .accordion-content {
+  padding: 1.5rem 2rem;
+  /* border: 0.1rem solid #248277; */
+  font-size: 1.5rem;
+  background: #fff;
+  border-top: 0;
+  line-height: 2;
+  animation: animate 0.2s linear backwards;
+  transform-origin: top;
+  display: none;
+}
+
+.we-are {
+  width: 100%;
+  margin: auto;
+  padding: 20px 100px;
+  background: #f2f2f2;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.we-are .header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.we-are .content {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000; /* Adjust the text color as needed */
+}
+
+.we-are .content h1 {
+  font-size: 3.8rem;
+}
+
+.we-are button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #d63384; /* Example button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.we-are button:hover {
+  background-color: #c82370; /* Darker shade for hover effect */
+}
+
+.review .approach {
+  max-width: 1200px; /* Giới hạn chiều rộng của khối để không bị quá rộng trên màn hình lớn */
+  margin: 40px auto; /* Căn giữa khối và thêm khoảng cách trên dưới */
+  padding: 20px; /* Thêm padding cho khối để tạo khoảng cách với viền */
+}
+
+.approach h1 {
+  text-align: center; /* Căn giữa tiêu đề */
+  font-size: 38px; /* Cỡ chữ cho tiêu đề */
+  color: #333; /* Màu chữ cho tiêu đề */
+  margin-top: 0; /* Xóa khoảng cách trên cùng của tiêu đề */
+  padding-bottom: 10px; /* Thêm padding dưới tiêu đề */
+}
+
+.approach p {
+  font-size: 18px; /* Cỡ chữ cho đoạn văn */
+  color: #666; /* Màu chữ cho đoạn văn */
+  line-height: 1.5; /* Khoảng cách giữa các dòng */
+  text-align: center; /* Canh đều đoạn văn */
+}
+
+@media (min-width: 768px) {
+  .we-are .container {
+    padding: 40px;
+  }
+
+  .we-are .content {
+    font-size: 18px;
+  }
+
+  .we-are button {
+    max-width: 300px;
+    margin: 20px auto; /* Center button when screen is wide */
+  }
+}
+
+@media (max-width: 1045px) {
+  .review .row .content {
+    width: 100%;
+  }
+
+  .review .row {
+    padding: 20px 0;
+  }
+}

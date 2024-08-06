@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>WN Solutions - Giải pháp RFID tiên tiến</title>
+    <meta name="title" content="WN Solutions - Cutting-Edge RFID Solutions" />
+    <meta name="description" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div style="display: flex">
+          <a href="/">
+            <img
+              src="./assets/images/logo.png"
+              width="80"
+              height="50"
+              alt="WN logo"
+            />
+          </a>
+          <div>
+            <h1
+              style="
+                background: linear-gradient(90deg, #215e7b, #427797);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              WN SOLUTIONS
+            </h1>
+            <span style="font-weight: 500">Giải pháp RFID tiên tiến</span>
+          </div>
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="162"
+                height="50"
+                alt="WN logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/" class="navbar-link" data-nav-link>Trang chủ</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/ve-chung-toi" class="navbar-link" data-nav-link
+                >Về chúng tôi</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/dich-vu" class="navbar-link" data-nav-link>Dịch vụ</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="giai-phap" class="navbar-link" data-nav-link
+                >Giải pháp</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/lien-he" class="navbar-link" data-nav-link>Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- <button
+            class="header-action-btn"
+            aria-label="toggle search"
+            title="Search"
+          >
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button> -->
+
+          <div class="language-dropdown">
+            <button class="dropbtn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                alt="Tiếng Việt"
+                class="flag-icon"
+              />
+              TIẾNG VIỆT
+              <i class="arrow-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/home">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                ENGLISH
+              </a>
+              <a href="/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                  alt="Tiếng Việt"
+                  class="flag-icon"
+                />
+                TIẾNG VIỆT
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Nhận báo giá</span>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero has-bg-image"
+          id="home"
+          aria-label="home"
+          style="background-image: url('./assets/images/hero-bg.svg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                Tối đa hóa hiệu quả với các
+                <span class="span">giải pháp RFID</span> tùy chỉnh
+              </h1>
+
+              <p class="hero-text">
+                Khám phá thế giới RFID: nơi dữ liệu vượt qua ranh giới và kết
+                nối không có giới hạn.
+              </p>
+
+              <a href="#" class="btn has-before">
+                <span class="span">Bắt đầu ngay bây giờ</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+
+            <figure class="hero-banner">
+              <div class="img-holder one" style="--width: 270; --height: 300">
+                <img
+                  src="./assets/images/hero-banner-1.jpg"
+                  width="270"
+                  height="300"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
+
+              <div class="img-holder two" style="--width: 240; --height: 370">
+                <img
+                  src="./assets/images/hero-banner-2.jpg"
+                  width="240"
+                  height="370"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
+
+              <img
+                src="./assets/images/hero-shape-1.png"
+                width="380"
+                height="190"
+                alt=""
+                class="shape hero-shape-1"
+              />
+
+              <img
+                src="./assets/images/hero-shape-2.png"
+                width="622"
+                height="551"
+                alt=""
+                class="shape hero-shape-2"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #CATEGORY
+      -->
+
+        <section class="section category" aria-label="category">
+          <div class="container">
+            <p class="section-subtitle">MỞ KHÓA SỨC MẠNH CỦA RFID</p>
+
+            <h2 class="h2 section-title">
+              <span class="span">Lợi ích về RFID</span>
+            </h2>
+
+            <p class="section-text">
+              Khám phá những lợi ích mang tính cách mạng của công nghệ RFID.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="category-card" style="--color: 170, 75%, 41%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories1.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Online Degree Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Hợp lý hóa quản lý hàng tồn kho</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    RFID nâng cao hiệu quả quản lý hàng tồn kho, giảm thời gian
+                    tìm kiếm.
+                  </p>
+
+                  <!-- <span class="card-badge">7 Courses</span> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card" style="--color: 351, 83%, 61%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories2.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Non-Degree Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Giảm thiểu lỗi và tổn thất</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    Hệ thống RFID theo dõi các mặt hàng một cách chính xác và tự
+                    động hóa quy trình quản lý hàng tồn kho.
+                  </p>
+
+                  <!-- <span class="card-badge">4 Courses</span> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card" style="--color: 229, 75%, 58%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories3.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Off-Campus Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Ngăn chặn hành vi trộm cắp và làm giả</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    RFID cung cấp giải pháp bảo mật hiệu quả, kiểm soát dòng
+                    chảy của hàng hóa.
+                  </p>
+
+                  <!-- <span class="card-badge">8 Courses</span> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card" style="--color: 42, 94%, 55%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories4.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Hybrid Distance Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Dịch vụ nhanh chóng và linh hoạt</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    RFID cải thiện quá trình mua sắm và cung cấp các dịch vụ
+                    được cá nhân hóa dịch vụ cho khách hàng.
+                  </p>
+
+                  <!-- <span class="card-badge">8 Courses</span> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section
+          class="section about target-element"
+          id="about"
+          aria-label="about"
+        >
+          <div class="container">
+            <div class="about-content">
+              <p class="section-subtitle">Về chúng tôi</p>
+
+              <h2 class="h2 section-title">
+                Trao quyền cho các ngành công nghiệp với
+                <span class="span">giải pháp RFID </span> tiên tiến
+              </h2>
+
+              <p class="section-text">
+                Chào mừng bạn đến với WN Solutions, nhà cung cấp giải pháp RFID
+                hàng đầu, có trụ sở tại Thành phố Hồ Chí Minh, Việt Nam. Cam kết
+                của chúng tôi là cung cấp các giải pháp RFID tiên tiến được tùy
+                chỉnh cho nhiều loại các ngành công nghiệp bao gồm sản xuất, vận
+                tải và bán lẻ, từ đó hợp lý hóa các quy trình của công ty một
+                cách sáng tạo và hiệu quả.
+              </p>
+              <p class="section-text">
+                Đội ngũ nhân viên am hiểu của chúng tôi tại WN Solutions kết hợp
+                công nghệ bí quyết với sự hiểu biết sâu sắc về đặc thù của từng
+                khách hàng yêu cầu. Chúng tôi đảm bảo mọi dự án đều tận dụng tối
+                đa lợi thế của giá trị và lợi thế của nó bằng cách phát triển
+                các giải pháp hoàn hảo đáp ứng mục tiêu của công ty. Với sự hiểu
+                biết toàn diện về Công nghệ RFID và chuyên môn trong ngành,
+                chúng tôi cam kết mang lại hiệu quả chưa từng có.
+              </p>
+            </div>
+            <figure class="about-banner">
+              <div class="img-holder">
+                <img
+                  src="./assets/images/RFID.jpg"
+                  width="700"
+                  loading="lazy"
+                  alt="about banner"
+                  class="img-cover"
+                />
+              </div>
+              <!-- 
+              <img
+                src="./assets/images/about-shape-1.svg"
+                width="360"
+                height="420"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-1"
+              /> -->
+
+              <!-- <img
+                src="./assets/images/about-shape-2.svg"
+                width="371"
+                height="220"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-2"
+              /> -->
+
+              <img
+                src="./assets/images/about-shape-3.png"
+                width="722"
+                height="528"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-3"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #COURSE
+      -->
+
+        <section class="section course" id="" aria-label="course">
+          <div class="container">
+            <p class="section-subtitle">Trường hợp ứng dụng</p>
+
+            <h2 class="h2 section-title">
+              Cùng xem những ứng dụng thực tế mà RFID mang lại
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_1.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >QUẢN LÝ RFID PHÂN LOẠI RÁC THẢI</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_2.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >NHẬN DẠNG CÔNG NGHIỆP RFID CHO SẢN XUẤT VÀ CHẾ TẠO</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_3.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >HỆ THỐNG QUẢN LÝ RFID BÃI ĐẬU XE</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_4.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >QUẢN LÝ RFID CHO CONTAINER LOGISTICS</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_5.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >QUẢN LÝ RFID CHO BÁN LẺ GIÀY VÀ TRANG PHỤC CỬA HÀNG</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_6.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >QUẢN LÝ TRUY XUẤT NGUỒN GỐC HÓA CHẤT NGUY HIỂM</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Xem thêm ứng dụng</span>
+
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+              ></ion-icon>
+            </a>
+          </div>
+        </section>
+
+        <section id="our-services" class="service target-element">
+          <div class="max-width">
+            <h1>Dịch vụ của chúng tôi</h1>
+            <div class="content">
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Triển khai giải pháp RFID tích hợp</h3>
+                  <br />
+                  <p>
+                    Chúng tôi chuyên triển khai giải pháp tích hợp RFID phù hợp
+                    với nhu cầu kinh doanh của bạn. Chuyên môn của chúng tôi nằm
+                    ở kết hợp liền mạch công nghệ RFID vào hiện tại của bạn cơ
+                    sở hạ tầng để tối ưu hóa quy trình và tăng năng suất
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Triển khai hệ thống RFID hiệu quả</h3>
+                  <br />
+                  <p>
+                    Nhóm của chúng tôi vượt trội trong việc triển khai hiệu quả
+                    các hệ thống RFID, đảm bảo sự gián đoạn tối thiểu cho hoạt
+                    động của bạn. Từ ban đầu lập kế hoạch cho đến lần thực hiện
+                    cuối cùng, chúng tôi xử lý việc triển khai quá trình cung
+                    cấp một giải pháp RFID đầy đủ chức năng phù hợp với mục tiêu
+                    của bạn
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Hỗ trợ hệ thống RFID đáp ứng</h3>
+                  <br />
+                  <p>
+                    Chúng tôi cung cấp các dịch vụ hỗ trợ đáp ứng để đảm bảo
+                    hoạt động suôn sẻ hoạt động của hệ thống RFID của bạn. Đội
+                    ngũ của chúng tôi đang ở chế độ chờ giải quyết kịp thời mọi
+                    vấn đề hoặc mối quan ngại, giảm thiểu thời gian ngừng hoạt
+                    động và tối đa hóa thời gian hoạt động của hệ thống
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Tư vấn ứng dụng RFID phù hợp</h3>
+                  <br />
+                  <p>
+                    Chúng tôi cung cấp dịch vụ tư vấn để giúp bạn xác định và
+                    triển khai các ứng dụng RFID hiệu quả nhất cho việc kinh
+                    doanh. Dựa trên kiến thức chuyên môn của mình, chúng tôi
+                    cung cấp các dịch vụ phù hợp khuyến nghị để tận dụng công
+                    nghệ RFID và thúc đẩy hiệu quả trong hoạt động của bạn
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+
+      <!-- <div id="contact-us" class="container">
+        <div class="contact-box">
+          <div class="left"></div>
+          <div class="right">
+            <h2>Liên hệ với chúng tôi</h2>
+            <input type="text" class="field" placeholder="Your Name" />
+            <input type="email" class="field" placeholder="Your Email" />
+            <input type="text" class="field" placeholder="Your Phone" />
+            <textarea class="field" placeholder="Message"></textarea>
+            <button class="btn">Gửi</button>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <div class="git-container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Hãy giữ liên lạc</h3>
+          <p class="text">
+            Chúng tôi luôn sẵn sàng để trao đổi về cách dự án mới, ý tưởng sáng
+            tạo, hoặc cơ hội để tham gia và onhuwngx kế hoạch của bạn. Hãy liên
+            hệ vơi chúng tôi để chúng ta có thể trao đổi thêm.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="./assets/images/location.png" class="icon" alt="" />
+              <p>
+                C61 Đường số 1, Khu dân cư Park Riverside, Phường Phú Hữu, Thành
+                phố Thủ Đức, Thành Phố Hồ Chí Minh.
+              </p>
+            </div>
+            <div class="information">
+              <img src="./assets/images/mail.png" class="icon" alt="" />
+              <p>contact@wnsolutions.vn</p>
+            </div>
+            <!-- <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div> -->
+          </div>
+
+          <div class="social-media">
+            <p>Kết nối với chúng tôi :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Liên hệ</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Tên đầy đủ</label>
+              <span>Tên đầy đủ</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="Email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="Phone" class="input" />
+              <label for="">Số điện thoại</label>
+              <span>Số điện thoại</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Tin nhắn</label>
+              <span>Tin nhắn</span>
+            </div>
+            <input type="submit" value="Gửi" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <h1>WN Solutions</h1>
+            <p class="footer-brand-text">
+              WN Solution là công ty công nghệ chuyên sâu, chuyên về nghiên cứu
+              và sản xuất Anten, Anten chất lượng cao các ứng dụng.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:wnsolutions@gmail.com" class="footer-link"
+                >wnsolutions@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Khám phá</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Về chúng tôi</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Dịch vụ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Bài viết</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Trường hợp ứng dụng</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Liên hệ</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Tin tức công nghệ</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID là gì ?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >5 cách để cấp nguồn cho đầu đọc RFID</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID thụ động là gì?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >RFID được sử dụng để làm gì? 12 ứng dụng RFID</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Quản lý kho hàng RFID</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Liên hệ</p>
+
+            <p class="footer-list-text">
+              Nhập địa chỉ email của bạn để đăng ký nhận bản tin của chúng tôi
+              đăng ký
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email"
+                required
+                class="input-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Đăng ký</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

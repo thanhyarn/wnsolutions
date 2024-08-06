@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>WN Solutions - Cutting-Edge RFID Solutions</title>
+    <meta name="title" content="WN Solutions - Cutting-Edge RFID Solutions" />
+    <meta name="description" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/solutions.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+   
+    <header class="header" data-header>
+      <div class="container">
+        <div style="display: flex">
+          <a href="/home">
+            <img
+              src="./assets/images/logo.png"
+              width="80"
+              height="50"
+              alt="WN logo"
+            />
+          </a>
+          <div>
+            <h1
+              style="
+                background: linear-gradient(90deg, #215e7b, #427797);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              WN SOLUTIONS
+            </h1>
+            <span style="font-weight: 500">Cutting-Edge RFID Solutions</span>
+          </div>
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="162"
+                height="50"
+                alt="WN logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/about-us" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/our-services" class="navbar-link" data-nav-link
+                >Our Services</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/solutions" class="navbar-link" data-nav-link
+                >Solutions</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- <button
+            class="header-action-btn"
+            aria-label="toggle search"
+            title="Search"
+          >
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart" title="Cart">
+            <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button> -->
+
+          <div class="language-dropdown">
+            <button class="dropbtn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                alt="English"
+                class="flag-icon"
+              />
+              ENGLISH
+              <i class="arrow-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/giai-phap">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                  alt="Tiếng Việt"
+                  class="flag-icon"
+                />
+                TIẾNG VIỆT
+              </a>
+              <a href="/solutions">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                ENGLISH
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Get A Quote</span>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="solutions-container">
+        <div class="row content">
+          <div class="img-container">
+            <img src="./assets/images/about-shape-3.png" />
+            <img
+              class="solutions-img-1"
+              src="./assets/images/rfid solutions.png"
+            />
+          </div>
+          <div class="contentWrapper">
+            <div class="content">
+              <span class="textWrapper">
+                <span>RFID Solutions</span>
+              </span>
+              <h2>Leading the way in RFID Solutions in Vietnam</h2>
+              <p>
+                WN Solutions brings breakthrough RFID solutions to businesses in
+                Vietnam and worldwide, enhancing productivity, optimizing
+                workflows, and enabling better decision-making. We not only
+                provide cutting-edge RFID solutions but also customize them to
+                accurately reflect your specific requirements and goals. Let us
+                help drive your business growth and make a difference in today's
+                competitive market.
+              </p>
+              <a>Get started</a>
+            </div>
+          </div>
+        </div>
+        <div class="content-2">
+          <div class="container">
+            <div class="left-side">
+              <h5>THE PROBLEM</h5>
+              <span>
+                <span class="blue-text">80% of your time</span> spent manually
+                tracking inventory & assets
+              </span>
+            </div>
+            <div class="right-side">
+              <h5>THE SOLUTIIONS</h5>
+              <span>
+                <span class="purple-text">Streamline</span> your inventory
+                tracking processes with WN Solutions
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="content-3">
+          <div class="solution">
+            <div class="icon">
+              <img
+                src="./assets/images/Asset Tracking.png"
+                alt="Asset Tracking"
+              />
+            </div>
+            <h3>Asset Tracking</h3>
+            <p>
+              Improve efficiency when managing fixed, mobile, and returnable
+              assets. Our RFID solutions ensure accurate data and streamlined
+              operations.
+            </p>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+          <div class="solution">
+            <div class="icon">
+              <img
+                src="./assets/images/inventory-tracking.png"
+                alt="Inventory Tracking"
+              />
+            </div>
+            <h3>Inventory Tracking</h3>
+            <p>
+              Streamline inventory tracking without versatile RFID solutions.
+              Enhance visibility and create data-driven insights for your
+              business.
+            </p>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+          <div class="solution">
+            <div class="icon">
+              <img
+                src="./assets/images/Logistics.png"
+                alt="Logistics and transportation management"
+              />
+            </div>
+            <h3>Logistics and transportation management</h3>
+            <p>
+              Transform your logistics and transportation management with RFID
+              solutions. Gain real-time insights and optimize operations
+              seamlessly.
+            </p>
+            <a href="#" class="learn-more">Learn more →</a>
+          </div>
+        </div>
+        <div class="industries-container">
+          <h5>Industries</h5>
+          <h2>
+            <span style="color: #44bdc4">Unsure where to start?</span> Learn
+            about what we can do for your industry.
+          </h2>
+          <div class="industries">
+            <div class="industry">
+              <h3>Retail</h3>
+              <p>
+                WN Solutions & RFID can help you transform your retail
+                operations. Improved client experience, increased accuracy, and
+                effective inventory tracking.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Transport & Logistics</h3>
+              <p>
+                Real-time tracking, faster procedures, and improved visibility
+                can help you optimize your processes.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Mining</h3>
+              <p>
+                Asset tracking and data-driven insights may increase efficiency
+                and safety.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Construction & Manufacturing</h3>
+              <p>
+                Streamline processes to boost output, cut expenses, and improve
+                operational effectiveness.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Aviation</h3>
+              <p>
+                Passengers may be guaranteed a smooth flight experience with WN
+                Solutions accurate tracking and decreased mishandling.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Food & Beverage</h3>
+              <p>
+                Facilitate improved product traceability, streamlined
+                procedures, and effective inventory management.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Automotive</h3>
+              <p>
+                Experience unparalleled efficiency and accuracy in managing your
+                assets and high-value inventory
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Government & Education</h3>
+              <p>
+                Enhanced security, improved efficiency and compliance, and
+                simplified asset management.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Arts</h3>
+              <p>
+                For optimized operations, provide precise asset tracking and
+                streamlined procedures.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Healthcare</h3>
+              <p>
+                Save money on inventory management while increasing cash flow.
+                RFID offers precise location visibility for medical assets and
+                commodities.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Commericial Laundries</h3>
+              <p>
+                Better client satisfaction and cost savings for the company are
+                two benefits of using an RFID system for tracking linens.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+            <div class="industry">
+              <h3>Wholesale Building Supplies</h3>
+              <p>
+                Boost productivity by using data-driven decision-making and
+                precise inventory tracking.
+              </p>
+              <a href="#">Learn more →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="faq">
+        <h1 class="">Frequently Asked Questions</h1>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc1" />
+          <label for="acc1">
+            <h2>01</h2>
+            <h3>What is RFID and how does it work?</h3>
+          </label>
+          <div class="content">
+            <p>
+              RFID stands for Radio Frequency Identification, a technology for
+              identifying and collecting data about objects through radio waves.
+              It includes key components like RFID tags, readers, and management
+              software to automate operations and management.
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc2" />
+          <label for="acc2">
+            <h2>02</h2>
+            <h3>What are the main benefits of implementing RFID solutions?</h3>
+          </label>
+          <div class="content">
+            <p>
+              Implementing RFID solutions brings several benefits such as
+              improved operational efficiency, reduced human errors, enhanced
+              accuracy of information, and decreased search time for goods.
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc3" />
+          <label for="acc3">
+            <h2>03</h2>
+            <h3>What are the primary applications of RFID technology?</h3>
+          </label>
+          <div class="content">
+            <p>
+              RFID is widely used in warehouse management, logistics, access
+              control, asset tracking, inventory management, and supply chain
+              traceability.
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc4" />
+          <label for="acc4">
+            <h2>04</h2>
+            <h3>
+              How do businesses choose the right RFID solution for their needs?
+            </h3>
+          </label>
+          <div class="content">
+            <p>
+              To select the right RFID solution, businesses should clearly
+              define their specific needs including scale, usage purposes,
+              operational environment, and technical requirements. Consulting
+              with experts and conducting trials before deployment are crucial
+              to ensure effectiveness and suitability of the solution.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="faq" id="faq">
+        <h1 class="heading">FAQ</h1>
+        <div class="row">
+          <div class="image">
+            <img src="./assets/images/FAQ.png"/>
+          </div>
+          <div class="accordion-container">
+            <div class="accordion">
+              <div class="accordion-header">
+                <span>+</span>
+                <h3>How much will it cost?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  a fuga aperiam hic molestias accusantium deleniti animi ab
+                  quibusdam, libero eum sunt voluptatibus fugiat pariatur
+                  reprehenderit voluptatem dolor velit doloremque.
+                </p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-header">
+                <span>+</span>
+                <h3>How much will it cost?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  a fuga aperiam hic molestias accusantium deleniti animi ab
+                  quibusdam, libero eum sunt voluptatibus fugiat pariatur
+                  reprehenderit voluptatem dolor velit doloremque.
+                </p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-header">
+                <span>+</span>
+                <h3>How much will it cost?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  a fuga aperiam hic molestias accusantium deleniti animi ab
+                  quibusdam, libero eum sunt voluptatibus fugiat pariatur
+                  reprehenderit voluptatem dolor velit doloremque.
+                </p>
+              </div>
+            </div>
+            <div class="accordion">
+              <div class="accordion-header">
+                <span>+</span>
+                <h3>How much will it cost?</h3>
+              </div>
+              <div class="accordion-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+                  a fuga aperiam hic molestias accusantium deleniti animi ab
+                  quibusdam, libero eum sunt voluptatibus fugiat pariatur
+                  reprehenderit voluptatem dolor velit doloremque.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <h1>WN Solutions</h1>
+            <p class="footer-brand-text">
+              WN Solution is a deep technology company, specializing in
+              researching and manufacturing high quality Antennas and Antenna
+              applications.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:wnsolutions@gmail.com" class="footer-link"
+                >wnsolutions@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Application Case</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Technology News</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">What is RFID ?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">5 Ways to Power RFID Readers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">What is Passive RFID?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >What is RFID Used For? 12 RFID Applications</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID Warehouse Management</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Contacts</p>
+
+            <p class="footer-list-text">
+              Enter your email address to register to our newsletter
+              subscription
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email"
+                required
+                class="input-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

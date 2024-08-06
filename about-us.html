@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>WN Solutions - Cutting-Edge RFID Solutions</title>
+    <meta name="title" content="WN Solutions - Cutting-Edge RFID Solutions" />
+    <meta name="description" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div style="display: flex">
+          <img
+            src="./assets/images/logo.png"
+            width="80"
+            height="50"
+            alt="WN logo"
+          />
+          <div>
+            <h1
+              style="
+                background: linear-gradient(90deg, #215e7b, #427797);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              WN SOLUTIONS
+            </h1>
+            <span style="font-weight: 500">Cutting-Edge RFID Solutions</span>
+          </div>
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="/home">
+              <img
+                src="./assets/images/logo.png"
+                width="80"
+                height="50"
+                alt="WN logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/about-us" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/our-services" class="navbar-link" data-nav-link
+                >Our Services</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/solutions" class="navbar-link" data-nav-link
+                >Solutions</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- <button
+            class="header-action-btn"
+            aria-label="toggle search"
+            title="Search"
+          >
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart" title="Cart">
+            <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button> -->
+
+          <div class="language-dropdown">
+            <button class="dropbtn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                alt="English"
+                class="flag-icon"
+              />
+              ENGLISH
+              <i class="arrow-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/ve-chung-toi">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                  alt="Tiếng Việt"
+                  class="flag-icon"
+                />
+                TIẾNG VIỆT
+              </a>
+              <a href="/about-us">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                ENGLISH
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Get A Quote</span>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="about-container">
+        <section class="hero" id="">
+          <div class="content">
+            <h1>Welcome to WN Solutions</h1>
+            <p>Empowering connections through innovative RFID technology.</p>
+            <a href="" class="btn">Get Started</a>
+          </div>
+        </section>
+
+        <section class="review" id="review">
+          <div class="row">
+            <div class="content">
+              <div class="vision">
+                <h2>OUR VISION</h2>
+                <p>
+                  To drive innovation and efficiency across industries through
+                  cutting-edge RFID solutions.
+                </p>
+              </div>
+              <div class="mission">
+                <h2>OUR MISSION</h2>
+                <p>
+                  To become the most reliable partner in RFID technology by
+                  providing advanced, tailored solutions that enhance operations
+                  and connectivity in a digitally evolving world.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-container">
+              <div class="accordion active">
+                <div class="accordion-heading">
+                  <h3>TeamWork</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Working as one toward a global mission.</h3>
+                  At WN Solutions, our team spans continents, with each member
+                  contributing unique perspectives, cultural insights, and
+                  specialized expertise. Our collaborative ethos and shared
+                  energy drive us to work collectively towards helping our
+                  clients achieve their objectives, leveraging RFID technology
+                  to streamline operations and enhance connectivity across
+                  global markets.
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Innovation</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Pioneering future-ready RFID solutions.</h3>
+                  Our RFID products and technologies are crafted to not only
+                  meet today’s needs but to also anticipate future challenges.
+                  At WN Solutions, we continuously innovate to transform how
+                  products and people connect, ensuring our solutions pave the
+                  way for a more efficient and connected future.
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Accountability</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Committing to our promises with integrity.</h3>
+                  At WN Solutions, accountability is paramount. Each member of
+                  our team is dedicated to delivering on our commitments with
+                  the highest standard of quality. This dedication is what
+                  cements our status as a reliable and trusted partner in the
+                  RFID solutions sector.
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Sustainability</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Championing sustainable practices in RFID technology.</h3>
+                  Sustainability is integral to our operations at WN Solutions.
+                  We engage in ethical and responsible business practices,
+                  expecting the same from our partners and clients. Our aim is
+                  to make a lasting positive impact on the communities we serve
+                  and the environment, ensuring our RFID solutions promote
+                  sustainability.
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Agility</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Adapting swiftly to meet dynamic market demands.</h3>
+                  Our foundation in RFID technology combined with our agile
+                  approach enables WN Solutions to quickly adapt to the evolving
+                  needs of our clients. We are well-equipped to tackle unique
+                  challenges and deliver impactful solutions swiftly, ensuring
+                  our clients stay ahead in the rapidly changing business
+                  landscape.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="we-are">
+            <div class="content">
+              <h1>We Are WN Solutions</h1>
+
+              <p>
+                Our journey as a leading provider of RFID solutions is a
+                reflection of our dedication to innovation and excellence.
+              </p>
+              <p>
+                Since our establishment, we have focused on delivering top-notch
+                RFID solutions that cater to the unique needs of our clients
+                across various industries.
+              </p>
+              <p>
+                Our global presence and extensive expertise empower us to offer
+                cutting-edge, sustainable, and value-driven solutions. At WN
+                Solutions, our core values and customer-centric approach are the
+                driving forces behind our success.
+              </p>
+              <p>
+                From our leadership team to every employee at WN Solutions, we
+                are committed to maintaining the highest standards of quality
+                and service for our clients.
+              </p>
+              <button>MEET OUR LEADERSHIP TEAM</button>
+            </div>
+          </div>
+
+          <div class="approach">
+            <h1>A Sustainable Approach</h1>
+            <p>
+              At WN Solutions, sustainability is at the heart of everything we
+              do. We acknowledge our vital role in driving a better, more
+              sustainable future through our RFID solutions. Our commitment
+              doesn't stop there. We are constantly exploring new methods to
+              elevate sustainability standards within the industry and globally.
+              Through our innovative products, solutions, and dedicated team, we
+              strive to make a significant positive impact on the environment
+              and society.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <h1>WN Solutions</h1>
+            <p class="footer-brand-text">
+              WN Solution is a deep technology company, specializing in
+              researching and manufacturing high quality Antennas and Antenna
+              applications.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:wnsolutions@gmail.com" class="footer-link"
+                >wnsolutions@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Application Case</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Technology News</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">What is RFID ?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">5 Ways to Power RFID Readers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">What is Passive RFID?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >What is RFID Used For? 12 RFID Applications</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID Warehouse Management</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Contacts</p>
+
+            <p class="footer-list-text">
+              Enter your email address to register to our newsletter
+              subscription
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email"
+                required
+                class="input-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/accordion.js" defer></script>
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

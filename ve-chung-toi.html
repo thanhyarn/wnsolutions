@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>WN Solutions - Cutting-Edge RFID Solutions</title>
+    <meta name="title" content="WN Solutions - Cutting-Edge RFID Solutions" />
+    <meta name="description" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div style="display: flex">
+          <a href="/">
+            <img
+              src="./assets/images/logo.png"
+              width="80"
+              height="50"
+              alt="WN logo"
+            />
+          </a>
+          <div>
+            <h1
+              style="
+                background: linear-gradient(90deg, #215e7b, #427797);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              WN SOLUTIONS
+            </h1>
+            <span style="font-weight: 500">Giải pháp RFID tiên tiến</span>
+          </div>
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="162"
+                height="50"
+                alt="WN logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/" class="navbar-link" data-nav-link>Trang chủ</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/ve-chung-toi" class="navbar-link" data-nav-link
+                >Về chúng tôi</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/dich-vu" class="navbar-link" data-nav-link>Dịch vụ</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="giai-phap" class="navbar-link" data-nav-link
+                >Giải pháp</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/lien-he" class="navbar-link" data-nav-link>Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- <button
+            class="header-action-btn"
+            aria-label="toggle search"
+            title="Search"
+          >
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button> -->
+
+          <div class="language-dropdown">
+            <button class="dropbtn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                alt="Tiếng Việt"
+                class="flag-icon"
+              />
+              TIẾNG VIỆT
+              <i class="arrow-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/about-us">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                ENGLISH
+              </a>
+              <a href="/ve-chung-toi">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                  alt="Tiếng Việt"
+                  class="flag-icon"
+                />
+                TIẾNG VIỆT
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Nhận báo giá</span>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="about-container">
+        <section class="hero" id="">
+          <div class="content">
+            <h1>Chào mừng đến với WN Solutions</h1>
+            <p>Khơi dậy sự kết nối thông qua công nghệ RFID đổi mới.</p>
+            <a href="" class="btn">Bắt đầu</a>
+          </div>
+        </section>
+
+        <section class="review" id="review">
+          <div class="row">
+            <div class="content">
+              <div class="vision">
+                <h2>TẦM NHÌN CỦA CHÚNG TÔI</h2>
+                <p>
+                  Thúc đẩy sự đổi mới và hiệu quả ngành công nghiệp thông qua
+                  các giải pháp RFID tiên tiến.
+                </p>
+              </div>
+              <div class="mission">
+                <h2>SỨ MỆNH CỦA CHÚNG TÔI</h2>
+                <p>
+                  Trở thành đối tác đáng tin cậy nhất trong lĩnh vực công nghệ
+                  RFID, cung cấp các giải pháp phù hợp, tiên tiến nhằm nâng cao
+                  hoạt động và kết nối trong thế giới số đang phát triển.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordion-container">
+              <div class="accordion active">
+                <div class="accordion-heading">
+                  <h3>Làm Việc Nhóm</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Làm việc cùng nhau hướng tới một sứ mệnh toàn cầu.</h3>
+                  Tại WN Solutions, đội ngũ của chúng tôi phủ khắp các châu lục,
+                  mỗi thành viên đều mang lại các góc nhìn độc đáo, trải nghiệm
+                  văn hóa, và chuyên môn chuyên biệt. Tinh thần hợp tác và năng
+                  lượng chung của chúng tôi thúc đẩy chúng tôi làm việc cùng
+                  nhau giúp khách hàng đạt được mục tiêu của họ, tận dụng công
+                  nghệ RFID để tối ưu hóa hoạt động và tăng cường kết nối trên
+                  toàn cầu.
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Đổi Mới</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Khơi nguồn giải pháp RFID sẵn sàng cho tương lai.</h3>
+                  Các sản phẩm và công nghệ RFID của chúng tôi được thiết kế
+                  không chỉ để đáp ứng nhu cầu hiện tại mà còn để dự đoán các
+                  thách thức tương lai. Tại WN Solutions, chúng tôi không ngừng
+                  đổi mới để biến đổi cách thức kết nối sản phẩm và con người,
+                  đảm bảo các giải pháp của chúng tôi mở đường cho một tương lai
+                  hiệu quả và kết nối hơn.
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Trách Nhiệm</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Cam kết với lời hứa của chúng tôi với sự trung thực.</h3>
+                  Tại WN Solutions, trách nhiệm là điều tối quan trọng. Mỗi
+                  thành viên trong đội ngũ của chúng tôi đều cống hiến để thực
+                  hiện các cam kết của mình với chất lượng cao nhất. Sự tận tâm
+                  này chính là điều củng cố vị thế của chúng tôi như một đối tác
+                  đáng tin cậy trong lĩnh vực giải pháp RFID.
+                </div>
+              </div>
+
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Bền Vững</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>Đề cao các thực tiễn bền vững trong công nghệ RFID.</h3>
+                  Bền vững là một phần không thể tách rời trong hoạt động của WN
+                  Solutions. Chúng tôi thực hiện các thực tiễn kinh doanh có đạo
+                  đức và trách nhiệm, và kỳ vọng điều tương tự từ các đối tác và
+                  khách hàng của mình. Mục tiêu của chúng tôi là tạo ra ảnh
+                  hưởng tích cực lâu dài đối với các cộng đồng mà chúng tôi phục
+                  vụ và môi trường chung quanh chúng ta, đảm bảo các giải pháp
+                  RFID của chúng tôi thúc đẩy sự bền vững.
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-heading">
+                  <h3>Linh Hoạt</h3>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+
+                <div class="accordion-content">
+                  <h3>
+                    Linh hoạt thích ứng nhanh chóng với nhu cầu thị trường động.
+                  </h3>
+                  Nền tảng vững chắc trong công nghệ RFID cùng với cách tiếp cận
+                  linh hoạt của chúng tôi cho phép WN Solutions nhanh chóng
+                  thích ứng với nhu cầu đang thay đổi của khách hàng. Chúng tôi
+                  có đủ khả năng để đối mặt với những thách thức độc đáo và cung
+                  cấp các giải pháp có ảnh hưởng mạnh mẽ một cách nhanh chóng,
+                  đảm bảo khách hàng của chúng tôi luôn đi trước trong bối cảnh
+                  kinh doanh biến động.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="we-are">
+            <div class="content">
+              <h1>Chúng Tôi Là WN Solutions</h1>
+
+              <p>
+                Hành trình của chúng tôi như một nhà cung cấp giải pháp RFID
+                hàng đầu là minh chứng cho sự tận tâm với sự đổi mới và xuất
+                sắc.
+              </p>
+              <p>
+                Kể từ khi thành lập, chúng tôi đã tập trung vào việc cung cấp
+                các giải pháp RFID hàng đầu, phục vụ nhu cầu đặc biệt của khách
+                hàng trong các ngành nghề khác nhau.
+              </p>
+              <p>
+                Sự hiện diện toàn cầu và kinh nghiệm rộng lớn của chúng tôi trao
+                quyền cho chúng tôi để cung cấp các giải pháp tiên tiến, bền
+                vững và mang lại giá trị. Tại WN Solutions, các giá trị cốt lõi
+                và cách tiếp cận tập trung vào khách hàng là lực đẩy mạnh mẽ
+                đằng sau thành công của chúng tôi.
+              </p>
+              <p>
+                Từ đội ngũ lãnh đạo đến mỗi nhân viên tại WN Solutions, chúng
+                tôi cam kết duy trì các tiêu chuẩn chất lượng và dịch vụ cao
+                nhất cho khách hàng của mình.
+              </p>
+              <button>Gặp gỡ đội ngũ lãnh đạo của chúng tôi</button>
+            </div>
+          </div>
+
+          <div class="approach">
+            <h1>Một Cách Tiếp Cận Bền Vững</h1>
+            <p>
+              Tại WN Solutions, bền vững là trọng tâm của mọi hoạt động của
+              chúng tôi. Chúng tôi nhận thức được vai trò then chốt của mình
+              trong việc thúc đẩy một tương lai tốt đẹp hơn và bền vững hơn
+              thông qua các giải pháp RFID của mình. Cam kết của chúng tôi không
+              dừng lại ở đó. Chúng tôi liên tục tìm kiếm các phương pháp mới để
+              nâng cao tiêu chuẩn bền vững trong ngành và toàn cầu. Thông qua
+              các sản phẩm, giải pháp sáng tạo và đội ngų đầy tâm huyết của
+              chúng tôi, chúng tôi nỗ lực tạo ra ảnh hưởng tích cực đáng kể đối
+              với môi trường và xã hội.
+            </p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <h1>WN Solutions</h1>
+            <p class="footer-brand-text">
+              WN Solution là công ty công nghệ chuyên sâu, chuyên về nghiên cứu
+              và sản xuất Anten, Anten chất lượng cao các ứng dụng.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:wnsolutions@gmail.com" class="footer-link"
+                >wnsolutions@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Khám phá</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Về chúng tôi</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Dịch vụ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Bài viết</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Trường hợp ứng dụng</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Liên hệ</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Tin tức công nghệ</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID là gì ?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >5 cách để cấp nguồn cho đầu đọc RFID</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID thụ động là gì?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >RFID được sử dụng để làm gì? 12 ứng dụng RFID</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Quản lý kho hàng RFID</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Liên hệ</p>
+
+            <p class="footer-list-text">
+              Nhập địa chỉ email của bạn để đăng ký nhận bản tin của chúng tôi
+              đăng ký
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email"
+                required
+                class="input-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Đăng ký</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/accordion.js" defer></script>
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

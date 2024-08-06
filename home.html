@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>WN Solutions - Cutting-Edge RFID Solutions</title>
+    <meta name="title" content="WN Solutions - Cutting-Edge RFID Solutions" />
+    <meta name="description" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div style="display: flex">
+         <a href="/home">
+            <img
+              src="./assets/images/logo.png"
+              width="80"
+              height="50"
+              alt="WN logo"
+            />
+          </a>
+          <div>
+            <h1
+              style="
+                background: linear-gradient(90deg, #215e7b, #427797);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              WN SOLUTIONS
+            </h1>
+            <span style="font-weight: 500">Cutting-Edge RFID Solutions</span>
+          </div>
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="162"
+                height="50"
+                alt="WN logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/home" class="navbar-link" data-nav-link>Home</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/about-us" class="navbar-link" data-nav-link>About</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/our-services" class="navbar-link" data-nav-link
+                >Our Services</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/solutions" class="navbar-link" data-nav-link
+                >Solutions</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/contact" class="navbar-link" data-nav-link>Contact</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- <button
+            class="header-action-btn"
+            aria-label="toggle search"
+            title="Search"
+          >
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <button class="header-action-btn" aria-label="cart" title="Cart">
+            <ion-icon name="cart-outline" aria-hidden="true"></ion-icon>
+
+            <span class="btn-badge">0</span>
+          </button> -->
+
+          <div class="language-dropdown">
+            <button class="dropbtn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                alt="English"
+                class="flag-icon"
+              />
+              ENGLISH
+              <i class="arrow-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                  alt="Tiếng Việt"
+                  class="flag-icon"
+                />
+                TIẾNG VIỆT
+              </a>
+              <a href="/home">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                ENGLISH
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Get A Quote</span>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section
+          class="section hero has-bg-image"
+          id="home"
+          aria-label="home"
+          style="background-image: url('./assets/images/hero-bg.svg')"
+        >
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="h1 section-title">
+                Maximize Efficiency with
+                <span class="span">Customized RFID</span> Solutions
+              </h1>
+
+              <p class="hero-text">
+                Explore the world of RFID: where data transcends boundaries and
+                connections know no limits.
+              </p>
+
+              <a href="#" class="btn has-before">
+                <span class="span">Get Started Now</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </a>
+            </div>
+
+            <figure class="hero-banner">
+              <div class="img-holder one" style="--width: 270; --height: 300">
+                <img
+                  src="./assets/images/hero-banner-1.jpg"
+                  width="270"
+                  height="300"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
+
+              <div class="img-holder two" style="--width: 240; --height: 370">
+                <img
+                  src="./assets/images/hero-banner-2.jpg"
+                  width="240"
+                  height="370"
+                  alt="hero banner"
+                  class="img-cover"
+                />
+              </div>
+
+              <img
+                src="./assets/images/hero-shape-1.png"
+                width="380"
+                height="190"
+                alt=""
+                class="shape hero-shape-1"
+              />
+
+              <img
+                src="./assets/images/hero-shape-2.png"
+                width="622"
+                height="551"
+                alt=""
+                class="shape hero-shape-2"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #CATEGORY
+      -->
+
+        <section class="section category" aria-label="category">
+          <div class="container">
+            <p class="section-subtitle">UNLOCK THE POWER OF RFID</p>
+
+            <h2 class="h2 section-title">
+              <span class="span">Benefits About RFID</span>
+            </h2>
+
+            <p class="section-text">
+              Discover the revolutionary benefits of RFID technology.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="category-card" style="--color: 170, 75%, 41%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories1.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Online Degree Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Streamlining Inventory Management</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    RFID enhances inventory management efficiency, reducing
+                    search time.
+                  </p>
+
+                  <!-- <span class="card-badge">7 Courses</span> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card" style="--color: 351, 83%, 61%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories2.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Non-Degree Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Minimized Errors and Losses</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    RFID systems track items accurately and automate the
+                    inventory management process.
+                  </p>
+
+                  <!-- <span class="card-badge">4 Courses</span> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card" style="--color: 229, 75%, 58%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories3.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Off-Campus Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Preventing Theft and Counterfeiting</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    RFID provides an effective security solution, controlling
+                    the flow of goods.
+                  </p>
+
+                  <!-- <span class="card-badge">8 Courses</span> -->
+                </div>
+              </li>
+
+              <li>
+                <div class="category-card" style="--color: 42, 94%, 55%">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/categories4.png"
+                      width="40"
+                      height="40"
+                      loading="lazy"
+                      alt="Hybrid Distance Programs"
+                      class="img"
+                    />
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Quick and Flexible Service</a
+                    >
+                  </h3>
+
+                  <p class="card-text">
+                    RFID improves the shopping process and provides personalized
+                    service to customers.
+                  </p>
+
+                  <!-- <span class="card-badge">8 Courses</span> -->
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #ABOUT
+      -->
+
+        <section
+          class="section about target-element"
+          id="about"
+          aria-label="about"
+        >
+          <div class="container">
+            <div class="about-content">
+              <p class="section-subtitle">About Us</p>
+
+              <h2 class="h2 section-title">
+                Empowering Industries with
+                <span class="span">Cutting-Edge RFID Solutions</span>
+              </h2>
+
+              <p class="section-text">
+                Welcome to WN Solutions, a leading RFID solutions provider,
+                headquartered in Ho Chi Minh City, Vietnam. Our commitment is to
+                provide advanced RFID solutions customized to a variety of
+                industries, including manufacturing, transportation and retail,
+                thereby streamlining corporate processes innovatively and
+                effective.
+              </p>
+              <p class="section-text">
+                Our knowledgeable staff at WN Solutions combine technological
+                know-how with a deep understanding of each customer's specific
+                requirements. We ensure every project takes full advantage of
+                its value and advantages by developing solutions that perfectly
+                meet the company's goals. With a comprehensive understanding of
+                RFID technology and industry expertise, we are committed to
+                delivering unprecedented efficiency.
+              </p>
+            </div>
+            <figure class="about-banner">
+              <div class="img-holder">
+                <img
+                  src="./assets/images/RFID.jpg"
+                  width="700"
+                  loading="lazy"
+                  alt="about banner"
+                  class="img-cover"
+                />
+              </div>
+              <!-- 
+              <img
+                src="./assets/images/about-shape-1.svg"
+                width="360"
+                height="420"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-1"
+              /> -->
+
+              <!-- <img
+                src="./assets/images/about-shape-2.svg"
+                width="371"
+                height="220"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-2"
+              /> -->
+
+              <img
+                src="./assets/images/about-shape-3.png"
+                width="722"
+                height="528"
+                loading="lazy"
+                alt=""
+                class="shape about-shape-3"
+              />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #COURSE
+      -->
+
+        <div class="container" style="width: 1200px !important">
+          <div style="text-align: center">
+            <h1 style="color: #333; font-weight: 700">WHY CHOOSE US?</h1>
+            <p>
+              Learn more about how we verify and digitally connect the physical
+              world.
+            </p>
+          </div>
+          <div class="features">
+            <div class="feature">
+              <div class="icon">
+                <img src="./assets/images/idea.png" alt="Smart" />
+              </div>
+              <h2>SMART</h2>
+              <p>
+                Building for the world of today but thinking of tomorrow, our
+                embeddable RFID provides a digital identity for every physical
+                object.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <img src="./assets/images/security.png" alt="Safe" />
+              </div>
+              <h2>SAFE</h2>
+              <p>
+                Some of the world's most secure environments trust us to deliver
+                safe and secure access to highly sensitive data and networks.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <img src="./assets/images/cyber-security.png" alt="Secure" />
+              </div>
+              <h2>SECURE</h2>
+              <p>
+                We secure, detect, and protect with award-winning, end-to-end,
+                feature-rich physical access control and video management
+                systems.
+              </p>
+            </div>
+            <div class="feature">
+              <div class="icon">
+                <img src="./assets/images/solutions.png" alt="Solutions" />
+              </div>
+              <h2>SOLUTIONS</h2>
+              <p>
+                With over 40 years of industry experience, we are the global
+                leader in connected security, digital identity, and custom RFID
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class=""></div>
+
+        <section class="section course" id="" aria-label="course">
+          <div class="container">
+            <p class="section-subtitle">Application Case</p>
+
+            <h2 class="h2 section-title">
+              Let's see the practical applications that RFID brings
+            </h2>
+
+            <ul class="grid-list">
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_1.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >WASTE CLASSIFICATION RFID MANAGEMENT</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_2.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >RFID INDUSTRIAL IDENTIFICATION FOR PRODUCTION AND
+                        MANUFACTURING</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_3.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >RFID MANAGEMENT SYSTEM FOR PARKING LOTS</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_4.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >RFID MANAGEMENT FOR CONTAINER LOGISTICS</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_5.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >RFID MANAGEMENT FOR FOOTWEAR AND APPAREL RETAIL
+                        STORES</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="course-card">
+                  <figure
+                    class="card-banner img-holder"
+                    style="--width: 370; --height: 220"
+                  >
+                    <img
+                      src="./assets/images/application_6.jpg"
+                      width="370"
+                      height="220"
+                      loading="lazy"
+                      alt="Build Responsive Real- World Websites with HTML and CSS"
+                      class="img-cover"
+                    />
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h3">
+                      <a href="#" class="card-title"
+                        >HAZARDOUS CHEMICAL RFID TRACEABILITY MANAGEMENT</a
+                      >
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#" class="btn has-before">
+              <span class="span">Browse more application</span>
+
+              <ion-icon
+                name="arrow-forward-outline"
+                aria-hidden="true"
+              ></ion-icon>
+            </a>
+          </div>
+        </section>
+
+        <!-- <section id="our-services" class="service target-element">
+          <div class="max-width">
+            <h1>Our Services</h1>
+            <div class="content">
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Integrated RFID Solutions Deployment</h3>
+                  <br />
+                  <p>
+                    We specialize in deploying integrated RFID solutions
+                    tailored to suit your business needs. Our expertise lies in
+                    seamlessly incorporating RFID technology into your existing
+                    infrastructure to optimize processes and boost productivity
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Efficient RFID System Implementation</h3>
+                  <br />
+                  <p>
+                    Our team excels in efficiently implementing RFID systems,
+                    ensuring minimal disruption to your operations. From initial
+                    planning to final execution, we handle the deployment
+                    process to deliver a fully functional RFID solution that
+                    aligns with your goals
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Responsive RFID System Support</h3>
+                  <br />
+                  <p>
+                    We provide responsive support services to ensure the smooth
+                    operation of your RFID systems. Our team is on standby to
+                    address any issues or concerns promptly, minimizing downtime
+                    and maximizing system uptime
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box">
+                  <i class="fa fa-desktop"></i>
+                  <h3>Tailored RFID Application Consulting</h3>
+                  <br />
+                  <p>
+                    We offer consulting services to help you identify and
+                    implement the most effective RFID applications for your
+                    business. Drawing on our expertise, we provide tailored
+                    recommendations to leverage RFID technology and drive
+                    efficiency in your operations
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> -->
+      </article>
+
+      <!-- <div id="contact-us" class="container">
+        <div class="contact-box">
+          <div class="left"></div>
+          <div class="right">
+            <h2>Contact Us</h2>
+            <input type="text" class="field" placeholder="Your Name" />
+            <input type="email" class="field" placeholder="Your Email" />
+            <input type="text" class="field" placeholder="Your Phone" />
+            <textarea class="field" placeholder="Message"></textarea>
+            <button class="btn">Send</button>
+          </div>
+        </div>
+      </div> -->
+    </main>
+
+    <div class="git-container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            Feel free go get touch with me. i am always open to discussing new
+            projects, creative ideas or opportunities to be part of your
+            visions.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="./assets/images/location.png" class="icon" alt="" />
+              <p>
+                C61 Street 1, Quarter 2, Park Riverside Residential Area, Phu
+                Huu Ward, Thu Duc City, Ho Chi Minh City
+              </p>
+            </div>
+            <div class="information">
+              <img src="./assets/images/mail.png" class="icon" alt="" />
+              <p>contact@wnsolutions.vn</p>
+            </div>
+            <!-- <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>123-456-789</p>
+            </div> -->
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="index.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="Email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="Phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="home-faq">
+      <div class="accordion">
+        <div class="accordion-content">
+          <header>
+            <span class="title">What do you mean by Accordion?</span>
+          </header>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, velit. Quae nam nihil facere, perspiciatis cumque ab
+            facilis reiciendis. Consequatur, laborum delectus ut aut maiores
+            assumenda vero necessitatibus expedita explicabo?
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">What do you mean by Accordion?</span>
+          </header>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, velit. Quae nam nihil facere, perspiciatis cumque ab
+            facilis reiciendis. Consequatur, laborum delectus ut aut maiores
+            assumenda vero necessitatibus expedita explicabo?
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">What do you mean by Accordion?</span>
+          </header>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, velit. Quae nam nihil facere, perspiciatis cumque ab
+            facilis reiciendis. Consequatur, laborum delectus ut aut maiores
+            assumenda vero necessitatibus expedita explicabo?
+          </p>
+        </div>
+        <div class="accordion-content">
+          <header>
+            <span class="title">What do you mean by Accordion?</span>
+          </header>
+          <p class="description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Perferendis, velit. Quae nam nihil facere, perspiciatis cumque ab
+            facilis reiciendis. Consequatur, laborum delectus ut aut maiores
+            assumenda vero necessitatibus expedita explicabo?
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <h1>WN Solutions</h1>
+            <p class="footer-brand-text">
+              WN Solution is a deep technology company, specializing in
+              researching and manufacturing high quality Antennas and Antenna
+              applications.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:wnsolutions@gmail.com" class="footer-link"
+                >wnsolutions@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Explore</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Our Services</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Application Case</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Technology News</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">What is RFID ?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">5 Ways to Power RFID Readers</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">What is Passive RFID?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >What is RFID Used For? 12 RFID Applications</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID Warehouse Management</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Contacts</p>
+
+            <p class="footer-list-text">
+              Enter your email address to register to our newsletter
+              subscription
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email"
+                required
+                class="input-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Subscribe</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

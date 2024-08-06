@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <!-- 
+    - primary meta tag
+  -->
+    <title>WN Solutions - Giải pháp RFID tiên tiến</title>
+    <meta name="title" content="WN Solutions - Cutting-Edge RFID Solutions" />
+    <meta name="description" />
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/svg+xml"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/solutions.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-bg.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-1.svg" />
+    <link rel="preload" as="image" href="./assets/images/hero-shape-2.png" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <div style="display: flex">
+          <a href="/">
+            <img
+              src="./assets/images/logo.png"
+              width="80"
+              height="50"
+              alt="WN logo"
+            />
+          </a>
+          <div>
+            <h1
+              style="
+                background: linear-gradient(90deg, #215e7b, #427797);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              "
+            >
+              WN SOLUTIONS
+            </h1>
+            <span style="font-weight: 500">Giải pháp RFID tiên tiến</span>
+          </div>
+        </div>
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/logo.svg"
+                width="162"
+                height="50"
+                alt="WN logo"
+              />
+            </a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler
+            >
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="/" class="navbar-link" data-nav-link>Trang chủ</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/ve-chung-toi" class="navbar-link" data-nav-link
+                >Về chúng tôi</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/dich-vu" class="navbar-link" data-nav-link>Dịch vụ</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="/giai-phap" class="navbar-link" data-nav-link
+                >Giải pháp</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="/lien-he" class="navbar-link" data-nav-link>Liên hệ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <!-- <button
+            class="header-action-btn"
+            aria-label="toggle search"
+            title="Search"
+          >
+            <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+          </button> -->
+
+          <div class="language-dropdown">
+            <button class="dropbtn">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                alt="Tiếng Việt"
+                class="flag-icon"
+              />
+              TIẾNG VIỆT
+              <i class="arrow-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/solutions">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/512px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+                  alt="English"
+                  class="flag-icon"
+                />
+                ENGLISH
+              </a>
+              <a href="/giai-phap">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/512px-Flag_of_Vietnam.svg.png"
+                  alt="Tiếng Việt"
+                  class="flag-icon"
+                />
+                TIẾNG VIỆT
+              </a>
+            </div>
+          </div>
+
+          <a href="#" class="btn has-before">
+            <span class="span">Nhận báo giá</span>
+
+            <ion-icon
+              name="arrow-forward-outline"
+              aria-hidden="true"
+            ></ion-icon>
+          </a>
+
+          <button
+            class="header-action-btn"
+            aria-label="open menu"
+            data-nav-toggler
+          >
+            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <div class="solutions-container">
+        <div class="row content">
+          <div class="img-container">
+            <img src="./assets/images/about-shape-3.png" />
+            <img
+              class="solutions-img-1"
+              src="./assets/images/rfid solutions.png"
+            />
+          </div>
+          <div class="contentWrapper">
+            <div class="content">
+              <span class="textWrapper">
+                <span>Giải pháp RFID</span>
+              </span>
+              <h2>Dẫn đầu trong cách giải pháp RFID tại Việt Nam</h2>
+              <p>
+                WN Solutions mang đến các giải pháp RFID đột phá cho doanh
+                nghiệp tại Việt Nam và trên toàn thế giới, nâng cao năng suất,
+                tối ưu hóa quy trình làm việc và tạo điều kiện cho quyết định
+                tốt hơn.. Chúng tôi không chỉ cung cấp các giải pháp RFID tiên
+                tiến mà còn tùy chỉnh chúng để có thể giải quyết được yêu cầu và
+                mục tiêu cụ thể của bạn. Hãy để chúng tôi giúp đẩy mạnh sự phát
+                triển kinh doanh của bạn và tạo ra sự khác biệt trong thị trường
+                cạnh tranh ngày nay.
+              </p>
+              <a>Bắt đầu ngay</a>
+            </div>
+          </div>
+        </div>
+        <div class="content-2">
+          <div class="container">
+            <div class="left-side">
+              <h5>VẤN ĐỀ</h5>
+              <span>
+                <span class="blue-text">80% thời gian của bạn</span> dành cho
+                việc theo dõi tồn kho và tài sản một cách thủ công
+              </span>
+            </div>
+            <div class="right-side">
+              <h5>GIẢI PHÁP</h5>
+              <span>
+                <span class="purple-text">Tối ưu hóa</span> quy trình theo dõi
+                tồn kho của bạn với WN Solutions
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="content-3">
+          <div class="solution">
+            <div class="icon">
+              <img
+                src="./assets/images/Asset Tracking.png"
+                alt="Asset Tracking"
+              />
+            </div>
+            <h3>Theo dõi tài sản</h3>
+            <p>
+              Cải thiện hiệu suất trong việc quản lý tài sản và có thể tái sử
+              dụng. Các giải pháp RFID của chúng tôi đảm bảo dữ liệu chính xác
+              và tối ưu hóa hoạt động
+            </p>
+            <a href="#" class="learn-more">Xem thêm →</a>
+          </div>
+          <div class="solution">
+            <div class="icon">
+              <img
+                src="./assets/images/inventory-tracking.png"
+                alt="Inventory Tracking"
+              />
+            </div>
+            <h3>Inventory Tracking</h3>
+            <p>
+              Tối ưu hóa việc theo dõi tồn kho với các giải pháp RFID của chúng
+              tôi. Nâng cao khả năng tìm kiếm sản phẩm và hiển thị thông tin, vị
+              trí chính xác dựa trên dữ liệu doanh nghiệp của bạn.
+            </p>
+            <a href="#" class="learn-more">Xem thêm →</a>
+          </div>
+          <div class="solution">
+            <div class="icon">
+              <img
+                src="./assets/images/Logistics.png"
+                alt="Logistics and transportation management"
+              />
+            </div>
+            <h3>Quản lý logistics và vận tải</h3>
+            <p>
+              Chuyển ododir quản lý logistics và vận tải của bạn với các giải
+              pháp RFID. Thu được thông tin theo thời gian thực và tối ưu hóa
+              hoạt động một cách mượt mà.
+            </p>
+            <a href="#" class="learn-more">Xem thêm →</a>
+          </div>
+        </div>
+        <div class="industries-container">
+          <h5>Công nghiệp</h5>
+          <h2>
+            <span style="color: #44bdc4">Bạn không biết bắt đầu từ đâu?</span>
+            Tìm hiểu về những gì chúng tôi có thể làm cho ngành của bạn.
+          </h2>
+          <div class="industries">
+            <div class="industry">
+              <h3>Retail</h3>
+              <p>
+                WN Solutions và công nghệ RFID có thể giúp bạn biến đổi hoạt
+                động bán lẻ của mình. Cải thiện tải nghiệm của khách hàng, tăng
+                độ chính xác và theo dõi tồn kho một cách hiệu quả.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Vận tải và Logistics</h3>
+              <p>
+                Theo dõi thời gian thực, thủ tục nhanh hơn và khẳ năng nhìn thấy
+                được cải thiện có thể giúp bạn tối ưu hóa quy trình của mình.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Mining</h3>
+              <p>
+                Asset tracking and data-driven insights may increase efficiency
+                and safety.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Xây dựng và sản xuất</h3>
+              <p>
+                Tối ưu hóa quy trình để tăng sản lượng, giảm chi phí và cải
+                thiện hiệu suất hoạt động.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Aviation</h3>
+              <p>
+                Hành khách có thể được đảm bảo một trải nghiệm bay mượt mà với
+                việc theo dõi chính xác và giảm thiểu việc xử lý không chính xác
+                từ WN Solutions.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Thực phẩm và đồ uống</h3>
+              <p>
+                Theo dõi được nguồn gốc, hạn sử dụng của sản phẩm để đảm bảo
+                được an toàn thực phẩm khi đến tay người tiêu dùng
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Ngành công nghiệp ô tô</h3>
+              <p>
+                Trải nghiệm hiệu suất và độ chính xác không gưới hạn trong việc
+                quản lý tài sản và tòn kho có giá trị cao của bạn.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Chính phủ và Giáo dục</h3>
+              <p>
+                Cải thiện bảo mật, tăng hiệu quả và tuân thủ quy định, và đơn
+                giản hóa quản lý tài sản.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Nghệ thuật</h3>
+              <p>
+                Tối ưu hóa hoạt động, cung cấp theo dxi tài sản và tinh chỉnh
+                quy trình.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Sức khỏe</h3>
+              <p>
+                Tăng lưu lượng tiền mặt trong khi giảm chi phí quản lý tồn kho.
+                Khả năng tìm thấy tài sản y tế và hàng hóa của các giải pháp
+                RFID.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Giặt ủi thương mại</h3>
+              <p>
+                Hai lợi ích của việc sử dụng hệ thống RFID để theo dõi sản phẩm
+                vải là sự hài lòng của khách hàng tốt hơn và việc tiết kiệm chi
+                phí cho công ty.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+            <div class="industry">
+              <h3>Bán buôn vật tư xây dựng</h3>
+              <p>
+                Nâng cao hiệu suất, quản lý tồn kho và tài sản hiệu quả hơn,
+                cũng như cung cấp thông tin cần thiết để đưa ra quyết định kinh
+                doanh thông minh.
+              </p>
+              <a href="#">Xem thêm →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="faq">
+        <h1 class="">Các câu hỏi thường gặp</h1>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc1" />
+          <label for="acc1">
+            <h2>01</h2>
+            <h3>RFID là gì và nó hoạt động như thế nào?</h3>
+          </label>
+          <div class="content">
+            <p>
+              RFID là viết tắt của Radio Frequency Identity, là công nghệ nhận
+              dạng và thu thập dữ liệu về vật thể thông qua sóng vô tuyến. Nó
+              bao gồm các thành phần chính như thẻ RFID, đầu đọc và phần mềm
+              quản lý để tự động hóa các hoạt động và quản lý.
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc2" />
+          <label for="acc2">
+            <h2>02</h2>
+            <h3>Lợi ích chính của việc triển khai giải pháp RFID là gì ?</h3>
+          </label>
+          <div class="content">
+            <p>
+              Việc triển khai các giải pháp RFID mang lại một số lợi ích như cải
+              thiện hiệu quả hoạt động, giảm lỗi của con người, nâng cao độ
+              chính xác của thông tin và giảm thời gian tìm kiếm hàng hóa.
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc3" />
+          <label for="acc3">
+            <h2>03</h2>
+            <h3>Các ứng dụng chính của công nghệ RFID là gì?</h3>
+          </label>
+          <div class="content">
+            <p>
+              RFID được sử dụng rộng rãi trong quản lý kho hàng, hậu cần, kiểm
+              soát truy cập, theo dõi tài sản, quản lý hàng tồn kho và truy xuất
+              nguồn gốc chuỗi cung ứng.
+            </p>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="acc" id="acc4" />
+          <label for="acc4">
+            <h2>04</h2>
+            <h3>
+              Làm thế nào để doanh nghiệp chọn giải pháp RFID phù hợp với nhu
+              cầu của mình?
+            </h3>
+          </label>
+          <div class="content">
+            <p>
+              Để lựa chọn giải pháp RFID phù hợp, doanh nghiệp nên xác định rõ
+              ràng các nhu cầu cụ thể của mình bao gồm quy mô, mục đích sử dụng,
+              môi trường hoạt động và yêu cầu kỹ thuật. Việc tham khảo ý kiến
+              ​​chuyên gia và tiến hành thử nghiệm trước khi triển khai là rất
+              quan trọng để đảm bảo tính hiệu quả và phù hợp của giải pháp.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer"
+      style="background-image: url('./assets/images/footer-bg.png')"
+    >
+      <div class="footer-top section">
+        <div class="container grid-list">
+          <div class="footer-brand">
+            <h1>WN Solutions</h1>
+            <p class="footer-brand-text">
+              WN Solution là công ty công nghệ chuyên sâu, chuyên về nghiên cứu
+              và sản xuất Anten, Anten chất lượng cao các ứng dụng.
+            </p>
+
+            <div class="wrapper">
+              <span class="span">Email:</span>
+
+              <a href="mailto:wnsolutions@gmail.com" class="footer-link"
+                >wnsolutions@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Khám phá</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Về chúng tôi</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Dịch vụ</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Bài viết</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Trường hợp ứng dụng</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Liên hệ</a>
+            </li>
+          </ul>
+
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Tin tức công nghệ</p>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID là gì ?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >5 cách để cấp nguồn cho đầu đọc RFID</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">RFID thụ động là gì?</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link"
+                >RFID được sử dụng để làm gì? 12 ứng dụng RFID</a
+              >
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Quản lý kho hàng RFID</a>
+            </li>
+          </ul>
+
+          <div class="footer-list">
+            <p class="footer-list-title">Liên hệ</p>
+
+            <p class="footer-list-text">
+              Nhập địa chỉ email của bạn để đăng ký nhận bản tin của chúng tôi
+              đăng ký
+            </p>
+
+            <form action="" class="newsletter-form">
+              <input
+                type="email"
+                name="email_address"
+                placeholder="Your email"
+                required
+                class="input-field"
+              />
+
+              <button type="submit" class="btn has-before">
+                <span class="span">Đăng ký</span>
+
+                <ion-icon
+                  name="arrow-forward-outline"
+                  aria-hidden="true"
+                ></ion-icon>
+              </button>
+            </form>
+
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-youtube"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn"
+      aria-label="back top top"
+      data-back-top-btn
+    >
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
